@@ -57,7 +57,11 @@
           </div>
 
           <div class="">
-            <img class="p-3 w-40 h-60 object-contain object-center" src="images/dash_img.png" alt="dash_img" />
+            <img
+              class="p-3 w-40 h-60 object-contain object-center"
+              src="images/dash_img.png"
+              alt="dash_img"
+            />
           </div>
         </div>
 
@@ -68,11 +72,10 @@
           <span class="truncate text-sm font-semibold">Logout</span>
         </div>
       </div>
-      
     </nav>
 
     <main
-      class="w-full xl:w-[85%] ms-0 xl:ms-[15%] min-h-screen py-10 flex flex-col gap-16"
+      class="w-full xl:w-[85%] ms-0 xl:ms-[15%] min-h-screen py-10 px-5 xl:px-10 flex flex-col gap-16 border"
     >
       <div class="flex items-center justify-between gap-4">
         <form class="group w-full">
@@ -105,18 +108,27 @@
               class="top-0 left-7 xl:left-12 absolute w-3.5 h-3.5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"
             ></span>
           </div>
-          <p class="capitalize text-base xl:text-lg text-white font-medium">
+          <span
+            class="capitalize text-sm xl:text-base text-white text-center font-medium"
+          >
             welcome, john doe
-          </p>
+          </span>
         </div>
       </div>
 
-      <section class="bg-white dark:bg-gray-900 rounded-xl w-full py-10 px-5 xl:px-10">
+      <section
+        class="bg-white dark:bg-gray-900 rounded-xl w-full py-10 px-5 xl:px-10"
+      >
         <h1 class="mb-2 text-2xl font-medium text-gray-900 dark:text-white">
           Board
-        </h1>        <div class="overflow-x-auto">
-          <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+        </h1>
+        <div class="overflow-x-auto">
+          <table
+            class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
+          >
+            <thead
+              class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+            >
               <tr>
                 <th scope="col" class="px-6 py-3">S/N</th>
                 <th scope="col" class="px-6 py-3">USERNAME</th>
@@ -129,7 +141,6 @@
             <tbody></tbody>
           </table>
         </div>
-        
       </section>
 
       <section
@@ -233,10 +244,10 @@
       <section
         class="bg-white dark:bg-gray-900 rounded-xl w-full flex flex-col gap-8 py-10 px-5 xl:px-10"
       >
-      <h1 class="mb-2 text-2xl font-medium text-gray-900 dark:text-white">
-        Approved Talents
-      </h1>
-       <div class="overflow-x-auto">
+        <h1 class="mb-2 text-2xl font-medium text-gray-900 dark:text-white">
+          Approved Talents
+        </h1>
+        <div class="overflow-x-auto">
           <table
             class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
           >
@@ -253,7 +264,9 @@
               </tr>
             </thead>
             <tbody>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <tr
+                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+              >
                 <th
                   scope="row"
                   class="font-medium text-gray-900 whitespace-nowrap dark:text-white px-6 py-4"
@@ -278,7 +291,9 @@
                   </button>
                 </td>
               </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <tr
+                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+              >
                 <th
                   scope="row"
                   class="font-medium text-gray-900 whitespace-nowrap dark:text-white px-6 py-4"
@@ -303,7 +318,9 @@
                   </button>
                 </td>
               </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <tr
+                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+              >
                 <th
                   scope="row"
                   class="font-medium text-gray-900 whitespace-nowrap dark:text-white px-6 py-4"
@@ -315,7 +332,9 @@
                 <td class="px-6 py-4">08067712931</td>
                 <td class="px-6 py-4">
                   <div class="flex items-center">
-                    <div class="h-2.5 w-2.5 rounded-full bg-green-500 me-2"></div>
+                    <div
+                      class="h-2.5 w-2.5 rounded-full bg-green-500 me-2"
+                    ></div>
                     Online
                   </div>
                 </td>
@@ -330,7 +349,7 @@
               </tr>
             </tbody>
           </table>
-       </div>
+        </div>
       </section>
 
       <section
@@ -447,7 +466,9 @@
         <h1 class="mb-2 text-2xl font-medium text-gray-900 dark:text-white">
           Bio
         </h1>
-        <div class="grid grid-cols-1 xl:grid-cols-3 gap-2 xl:gap-10 justify-between">
+        <div
+          class="grid grid-cols-1 xl:grid-cols-3 gap-2 xl:gap-10 justify-between"
+        >
           <img
             class="h-40 w-full rounded-xl self-center"
             src="images/bio.png"
@@ -460,7 +481,7 @@
                 >Full Name</label
               >
               <input
-                type="email"
+                type="text"
                 class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
                 placeholder="John Doe"
                 required
@@ -474,7 +495,7 @@
               <input
                 type="email"
                 class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-                placeholder="Johdoe@gmail.com"
+                placeholder="Johndoe@gmail.com"
                 required
               />
             </div>
@@ -594,18 +615,24 @@
       <section
         class="bg-[url('images/image_one.JPG')] bg-cover bg-center bg-no-repeat min-h-screen flex flex-col items-center justify-center"
       >
-        <div class="bg-white dark:bg-gray-900 p-10">
-          <form class="max-w-sm mx-auto">
+        <div
+          class="bg-white dark:bg-gray-900 bg-opacity-90 dark:bg-opacity-90 p-5 xl:p-8 rounded-xl"
+        >
+          <h1
+            class="text-xl tracking-tight font-medium text-gray-900 dark:text-white mb-6 text-center"
+          >
+            Welcome Back 👋
+          </h1>
+          <form class="max-w-sm mx-auto flex flex-col">
             <div class="mb-5">
               <label
-                for="email"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                 >Your email</label
               >
               <input
                 type="email"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="name@flowbite.com"
+                placeholder="johndoe@email.com"
                 required
               />
             </div>
