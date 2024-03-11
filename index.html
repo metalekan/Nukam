@@ -18,61 +18,63 @@
 
   <body class="w-[100%] flex items-center bg-[#002EBA]">
     <nav
-      class="w-0 xl:w-[15%] h-screen text-white hidden xl:flex flex-col justify-between items-center py-10 fixed top-0"
+      class="w-0 xl:w-[15%] h-screen text-white hidden xl:flex flex-col justify-between items-center py-10 px-5 fixed top-0"
     >
-      <div class="flex flex-col gap-16">
-        <a class="" href="">
+      <div class="flex flex-col justify-between gap-16 h-[100%]">
+        <a href="" class="cursor-pointer">
           <img
-            class="w-full h-16"
+            class="w-full h-16 object-contain object-center"
             loading="lazy"
             src="images/logo_nukam.png"
             alt="logo_nukam"
           />
         </a>
 
-        <div class="h-[100%]">
+        <div class="h-[80%] flex flex-col gap-3">
           <div
-            class="flex items-center justify-start ps-3 font-semibold py-3 w-[180px] side_nav"
+            class="flex items-center justify-start px-3 font-semibold py-2.5 w-[180px] side_nav"
           >
             <i class="bi bi-list-ul mx-2 text-xl font-extrabold"></i>
-            <span class="truncate text-sm font-semibold">Admin Menu</span>
+            <span class="truncate text-sm font-semibold">Menu</span>
           </div>
           <div
-            class="flex items-center justify-start ps-3 font-semibold py-3 w-[180px] side_nav"
+            class="flex items-center justify-start px-3 font-semibold py-2.5 w-[180px] side_nav"
           >
             <i class="bi bi-list-ul mx-2 text-xl font-extrabold"></i>
             <span class="truncate text-sm font-semibold">Manage Talents</span>
           </div>
           <div
-            class="flex items-center justify-start ps-3 font-semibold py-3 w-[180px] side_nav"
+            class="flex items-center justify-start px-3 font-semibold py-2.5 w-[180px] side_nav"
           >
             <i class="bi bi-list-ul mx-2 text-xl font-extrabold"></i>
             <span class="truncate text-sm font-semibold">Approved Talents</span>
           </div>
           <div
-            class="flex items-center justify-start ps-3 font-semibold py-3 w-[180px] side_nav"
+            class="flex items-center justify-start px-3 font-semibold py-2.5 w-[180px] side_nav"
           >
             <i class="bi bi-list-ul mx-2 text-xl font-extrabold"></i>
             <span class="truncate text-sm font-semibold">Programs</span>
           </div>
-          <div
-            class="flex items-center justify-start ps-3 font-semibold py-3 w-[180px] side_nav_logout"
-          >
-            <i class="bi bi-box-arrow-right mx-2 text-xl font-extrabold"></i>
-            <span class="truncate text-sm font-semibold">Logout</span>
+
+          <div class="">
+            <img class="p-3 w-40 h-60 object-contain object-center" src="images/dash_img.png" alt="dash_img" />
           </div>
         </div>
-      </div>
 
-      <div class="">
-        <img class="p-3 w-full" src="images/nav_gif.png" alt="" />
+        <div
+          class="flex items-center justify-start px-3 font-semibold py-2.5 w-[180px] side_nav_logout"
+        >
+          <i class="bi bi-box-arrow-right mx-2 text-xl font-extrabold"></i>
+          <span class="truncate text-sm font-semibold">Logout</span>
+        </div>
       </div>
+      
     </nav>
 
     <main
-      class="w-full xl:w-[85%] ms-0 xl:ms-[15%] min-h-screen py-10 px-2 xl:px-10 flex flex-col gap-16"
+      class="w-full xl:w-[85%] ms-0 xl:ms-[15%] min-h-screen py-10 flex flex-col gap-16"
     >
-      <div class="flex items-center justify-between">
+      <div class="flex items-center justify-between gap-4">
         <form class="group w-full">
           <svg
             viewBox="0 0 24 24"
@@ -92,48 +94,46 @@
           />
         </form>
 
-        <div class="flex items-center gap-2">
+        <div class="flex flex-col xl:flex-row items-center gap-2">
           <div class="relative">
             <img
               class="h-10 w-10 xl:w-16 xl:h-16 rounded-full"
-              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt=""
+              src="https://images.unsplash.com/photo-1633419798503-0b0c628f267c?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="img_profile"
             />
             <span
               class="top-0 left-7 xl:left-12 absolute w-3.5 h-3.5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"
             ></span>
           </div>
-          <p class="capitalize text-md xl:text-lg text-white font-medium">
-            welcome, bolaji
+          <p class="capitalize text-base xl:text-lg text-white font-medium">
+            welcome, john doe
           </p>
         </div>
       </div>
 
-      <section class="bg-gray-100 rounded-xl w-full p-10">
-        <h1 class="text-2xl font-bold text-[#002EBA] pb-4">Board</h1>
-        <table
-          class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
-        >
-          <thead
-            class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
-          >
-            <tr>
-              <th scope="col" class="px-6 py-3">S/N</th>
-              <th scope="col" class="px-6 py-3">USERNAME</th>
-              <th scope="col" class="px-6 py-3">FULL NAMES</th>
-              <th scope="col" class="px-6 py-3">PHONE NUMBER</th>
-              <th scope="col" class="px-6 py-3">STATUS</th>
-              <th scope="col" class="px-6 py-3">ACTION</th>
-            </tr>
-          </thead>
-          <tbody>
-
-          </tbody>
-        </table>
+      <section class="bg-white dark:bg-gray-900 rounded-xl w-full py-10 px-5 xl:px-10">
+        <h1 class="mb-2 text-2xl font-medium text-gray-900 dark:text-white">
+          Board
+        </h1>        <div class="overflow-x-auto">
+          <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+              <tr>
+                <th scope="col" class="px-6 py-3">S/N</th>
+                <th scope="col" class="px-6 py-3">USERNAME</th>
+                <th scope="col" class="px-6 py-3">FULL NAMES</th>
+                <th scope="col" class="px-6 py-3">PHONE NUMBER</th>
+                <th scope="col" class="px-6 py-3">STATUS</th>
+                <th scope="col" class="px-6 py-3">ACTION</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        
       </section>
 
       <section
-        class="bg-white dark:bg-gray-900 shadow-lg rounded-xl flex flex-col p-10"
+        class="bg-white dark:bg-gray-900 shadow-lg rounded-xl flex flex-col py-10 px-5 xl:px-10"
       >
         <h1 class="mb-2 text-2xl font-medium text-gray-900 dark:text-white">
           John Doe
@@ -231,108 +231,110 @@
       </section>
 
       <section
-        class="bg-white dark:bg-gray-900 rounded-xl w-full flex flex-col gap-8 py-10 px-8"
+        class="bg-white dark:bg-gray-900 rounded-xl w-full flex flex-col gap-8 py-10 px-5 xl:px-10"
       >
-        <h1 class="mb-2 text-2xl font-medium text-gray-900 dark:text-white">
-          Approved Talents
-        </h1>
-        <table
-          class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
-        >
-          <thead
-            class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+      <h1 class="mb-2 text-2xl font-medium text-gray-900 dark:text-white">
+        Approved Talents
+      </h1>
+       <div class="overflow-x-auto">
+          <table
+            class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
           >
-            <tr>
-              <th scope="col" class="px-6 py-3">S/N</th>
-              <th scope="col" class="px-6 py-3">USERNAME</th>
-              <th scope="col" class="px-6 py-3">FULL NAMES</th>
-              <th scope="col" class="px-6 py-3">PHONE NUMBER</th>
-              <th scope="col" class="px-6 py-3">STATUS</th>
-              <th scope="col" class="px-6 py-3">ACTION</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-              <th
-                scope="row"
-                class="font-medium text-gray-900 whitespace-nowrap dark:text-white px-6 py-4"
-              >
-                1
-              </th>
-              <td class="px-6 py-4">Apple MacBook Pro 17"</td>
-              <td class="px-6 py-4">John Doe</td>
-              <td class="px-6 py-4">08067712931</td>
-              <td class="px-6 py-4">
-                <div class="flex items-center">
-                  <div class="h-2.5 w-2.5 rounded-full bg-red-500 me-2"></div>
-                  Offline
-                </div>
-              </td>
-              <td class="px-6 py-4">
-                <button
-                  type="button"
-                  class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+            <thead
+              class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+            >
+              <tr>
+                <th scope="col" class="px-6 py-3">S/N</th>
+                <th scope="col" class="px-6 py-3">USERNAME</th>
+                <th scope="col" class="px-6 py-3">FULL NAMES</th>
+                <th scope="col" class="px-6 py-3">PHONE NUMBER</th>
+                <th scope="col" class="px-6 py-3">STATUS</th>
+                <th scope="col" class="px-6 py-3">ACTION</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <th
+                  scope="row"
+                  class="font-medium text-gray-900 whitespace-nowrap dark:text-white px-6 py-4"
                 >
-                  Add
-                </button>
-              </td>
-            </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-              <th
-                scope="row"
-                class="font-medium text-gray-900 whitespace-nowrap dark:text-white px-6 py-4"
-              >
-                2
-              </th>
-              <td class="px-6 py-4">Apple MacBook Pro 17"</td>
-              <td class="px-6 py-4">John Doe</td>
-              <td class="px-6 py-4">08067712931</td>
-              <td class="px-6 py-4">
-                <div class="flex items-center">
-                  <div class="h-2.5 w-2.5 rounded-full bg-red-500 me-2"></div>
-                  Offline
-                </div>
-              </td>
-              <td class="px-6 py-4">
-                <button
-                  type="button"
-                  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                  1
+                </th>
+                <td class="px-6 py-4">Apple MacBook Pro 17"</td>
+                <td class="px-6 py-4">John Doe</td>
+                <td class="px-6 py-4">08067712931</td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center">
+                    <div class="h-2.5 w-2.5 rounded-full bg-red-500 me-2"></div>
+                    Offline
+                  </div>
+                </td>
+                <td class="px-6 py-4">
+                  <button
+                    type="button"
+                    class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                  >
+                    Add
+                  </button>
+                </td>
+              </tr>
+              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <th
+                  scope="row"
+                  class="font-medium text-gray-900 whitespace-nowrap dark:text-white px-6 py-4"
                 >
-                  Remove
-                </button>
-              </td>
-            </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-              <th
-                scope="row"
-                class="font-medium text-gray-900 whitespace-nowrap dark:text-white px-6 py-4"
-              >
-                3
-              </th>
-              <td class="px-6 py-4">Apple MacBook Pro 17"</td>
-              <td class="px-6 py-4">John Doe</td>
-              <td class="px-6 py-4">08067712931</td>
-              <td class="px-6 py-4">
-                <div class="flex items-center">
-                  <div class="h-2.5 w-2.5 rounded-full bg-green-500 me-2"></div>
-                  Online
-                </div>
-              </td>
-              <td class="px-6 py-4">
-                <button
-                  type="button"
-                  class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                  2
+                </th>
+                <td class="px-6 py-4">Apple MacBook Pro 17"</td>
+                <td class="px-6 py-4">John Doe</td>
+                <td class="px-6 py-4">08067712931</td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center">
+                    <div class="h-2.5 w-2.5 rounded-full bg-red-500 me-2"></div>
+                    Offline
+                  </div>
+                </td>
+                <td class="px-6 py-4">
+                  <button
+                    type="button"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                  >
+                    Remove
+                  </button>
+                </td>
+              </tr>
+              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <th
+                  scope="row"
+                  class="font-medium text-gray-900 whitespace-nowrap dark:text-white px-6 py-4"
                 >
-                  Add
-                </button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+                  3
+                </th>
+                <td class="px-6 py-4">Apple MacBook Pro 17"</td>
+                <td class="px-6 py-4">John Doe</td>
+                <td class="px-6 py-4">08067712931</td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center">
+                    <div class="h-2.5 w-2.5 rounded-full bg-green-500 me-2"></div>
+                    Online
+                  </div>
+                </td>
+                <td class="px-6 py-4">
+                  <button
+                    type="button"
+                    class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                  >
+                    Add
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+       </div>
       </section>
 
       <section
-        class="bg-white dark:bg-gray-900 rounded-xl w-full flex flex-col gap-8 py-10 px-8"
+        class="bg-white dark:bg-gray-900 rounded-xl w-full flex flex-col gap-8 py-10 px-5 xl:px-10"
       >
         <h1 class="mb-2 text-2xl font-medium text-gray-900 dark:text-white">
           Programs
@@ -440,12 +442,12 @@
       </section>
 
       <section
-        class="bg-white dark:bg-gray-900 rounded-xl w-full flex flex-col gap-8 py-10 px-8"
+        class="bg-white dark:bg-gray-900 rounded-xl w-full flex flex-col gap-8 py-10 px-5 xl:px-10"
       >
         <h1 class="mb-2 text-2xl font-medium text-gray-900 dark:text-white">
           Bio
         </h1>
-        <div class="grid grid-cols-1 xl:grid-cols-3 gap-10 justify-between">
+        <div class="grid grid-cols-1 xl:grid-cols-3 gap-2 xl:gap-10 justify-between">
           <img
             class="h-40 w-full rounded-xl self-center"
             src="images/bio.png"
@@ -590,58 +592,60 @@
       </section>
 
       <section
-        class="bg-white dark:bg-gray-900 min-h-screen flex flex-col items-center justify-center"
+        class="bg-[url('images/image_one.JPG')] bg-cover bg-center bg-no-repeat min-h-screen flex flex-col items-center justify-center"
       >
-        <form class="max-w-sm mx-auto">
-          <div class="mb-5">
-            <label
-              for="email"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-              >Your email</label
-            >
-            <input
-              type="email"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="name@flowbite.com"
-              required
-            />
-          </div>
-          <div class="mb-5">
-            <label
-              for="password"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-              >Your password</label
-            >
-            <input
-              type="password"
-              id="password"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              required
-            />
-          </div>
-          <div class="flex items-start mb-5">
-            <div class="flex items-center h-5">
+        <div class="bg-white dark:bg-gray-900 p-10">
+          <form class="max-w-sm mx-auto">
+            <div class="mb-5">
+              <label
+                for="email"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                >Your email</label
+              >
               <input
-                id="remember"
-                type="checkbox"
-                value=""
-                class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                type="email"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="name@flowbite.com"
                 required
               />
             </div>
-            <label
-              for="remember"
-              class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              >Remember me</label
+            <div class="mb-5">
+              <label
+                for="password"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                >Your password</label
+              >
+              <input
+                type="password"
+                id="password"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                required
+              />
+            </div>
+            <div class="flex items-start mb-5">
+              <div class="flex items-center h-5">
+                <input
+                  id="remember"
+                  type="checkbox"
+                  value=""
+                  class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                  required
+                />
+              </div>
+              <label
+                for="remember"
+                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >Remember me</label
+              >
+            </div>
+            <button
+              type="submit"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
-          </div>
-          <button
-            type="submit"
-            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Submit
-          </button>
-        </form>
+              Submit
+            </button>
+          </form>
+        </div>
       </section>
     </main>
 
