@@ -21,9 +21,9 @@
       class="w-0 xl:w-[15%] h-screen text-white hidden xl:flex flex-col justify-between items-center py-10 px-5 fixed top-0"
     >
       <div
-        class="flex flex-col items-center justify-between gap-16 h-[100%]"
+        class="flex flex-col items-center h-[100%]"
       >
-        <a href="" class="cursor-pointer">
+        <a href="/" class="cursor-pointer h-[20%]">
           <img
             class="w-full h-16 object-contain object-center"
             loading="lazy"
@@ -34,50 +34,58 @@
 
         <div class="h-[80%] flex flex-col gap-3">
           <div
-            class="flex items-center justify-start px-3 font-semibold py-2.5 w-full side_nav"
+            class="flex items-center justify-start px-8 font-semibold py-2.5 w-full side_nav"
           >
             <i class="bi bi-list-ul mx-2 text-md font-extrabold"></i>
-            <span class="truncate text-sm font-semibold">Menu</span>
+            <span class="truncate text-sm font-medium">Menu</span>
           </div>
           <div
-            class="flex items-center justify-start px-3 font-semibold py-2.5 w-full side_nav"
+            class="flex items-center justify-start px-8 font-semibold py-2.5 w-full side_nav"
           >
             <i class="bi bi-list-ul mx-2 text-md font-extrabold"></i>
-            <span class="truncate text-sm font-semibold">Manage Talents</span>
+            <span class="truncate text-sm font-medium">Manage Talents</span>
           </div>
           <div
-            class="flex items-center justify-start px-3 font-semibold py-2.5 w-full side_nav"
+            class="flex items-center justify-start px-8 font-semibold py-2.5 w-full side_nav"
           >
             <i class="bi bi-list-ul mx-2 text-md font-extrabold"></i>
-            <span class="truncate text-sm font-semibold">Approved Talents</span>
+            <span class="truncate text-sm font-medium">Approved Talents</span>
           </div>
           <div
-            class="flex items-center justify-start px-3 font-semibold py-2.5 w-full side_nav"
+            class="flex items-center justify-start px-8 font-semibold py-2.5 w-full side_nav"
           >
             <i class="bi bi-list-ul mx-2 text-md font-extrabold"></i>
-            <span class="truncate text-sm font-semibold">Programs</span>
+            <span class="truncate text-sm font-medium">Programs</span>
           </div>
 
-          <div class="">
+          <div class="flex items-center justify-center">
             <img
-              class="p-3 w-60 h-60 object-contain object-center"
+              class="p-3 w-50 h-60 object-contain object-center"
               src="images/dash_img.png"
               alt="dash_img"
             />
           </div>
 
           <div
-            class="flex items-center justify-start px-3 font-semibold py-2.5 w-full side_nav_logout"
+            class="flex items-center justify-start px-8 font-semibold py-2.5 w-full side_nav_logout"
           >
             <i class="bi bi-box-arrow-right mx-2 text-md font-extrabold"></i>
-            <span class="truncate text-sm font-semibold">Logout</span>
+            <span class="truncate text-sm font-medium">Logout</span>
           </div>
         </div>
       </div>
+
+      <label class="ui-switch hidden">
+        <input type="checkbox">
+        <div class="slider">
+          <div class="circle"></div>
+        </div>
+      </label>
+      
     </nav>
 
     <main
-      class="w-full xl:w-[85%] ms-0 xl:ms-[15%] min-h-screen py-10 px-5 xl:px-10 flex flex-col gap-16"
+      class="w-full xl:w-[85%] ms-0 xl:ms-[15%] mmin-h-screen py-10 px-5 xl:px-10 flex flex-col gap-10 bg-blue-700"
     >
       <div class="flex items-center justify-between gap-4">
         <form class="group w-full">
@@ -102,12 +110,12 @@
         <div class="flex flex-col xl:flex-row items-center gap-2">
           <div class="relative">
             <img
-              class="h-10 w-10 xl:w-16 xl:h-16 rounded-full"
+              class="h-10 w-10 xxl:w-16 xxl:h-16 rounded-full"
               src="https://images.unsplash.com/photo-1633419798503-0b0c628f267c?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="img_profile"
             />
             <span
-              class="top-0 left-7 xl:left-12 absolute w-3.5 h-3.5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"
+              class="top-0 left-7 xxl:left-12 absolute w-3.5 h-3.5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"
             ></span>
           </div>
           <span
@@ -289,7 +297,7 @@
                     type="button"
                     class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
                   >
-                    Add
+                    Add Now
                   </button>
                 </td>
               </tr>
@@ -345,7 +353,7 @@
                     type="button"
                     class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
                   >
-                    Add
+                    Add Now
                   </button>
                 </td>
               </tr>
@@ -618,14 +626,14 @@
         class="bg-[url('images/image_one.JPG')] bg-cover bg-center bg-no-repeat min-h-screen flex flex-col items-center justify-center"
       >
         <div
-          class="bg-white dark:bg-gray-900 bg-opacity-90 dark:bg-opacity-90 p-5 xl:p-8 rounded-xl"
+          class="bg-white dark:bg-gray-900 bg-opacity-90 dark:bg-opacity-90 p-5 rounded-xl w-[80%] xl:w-[25%]"
         >
           <h1
-            class="text-xl tracking-tight font-medium text-gray-900 dark:text-white mb-6 text-center"
+            class="text-xl xl:text-2xl tracking-tight font-medium text-gray-900 dark:text-white mb-10 text-center"
           >
             Welcome Back 👋
           </h1>
-          <form class="max-w-sm mx-auto flex flex-col">
+          <form class="flex flex-col">
             <div class="mb-5">
               <label
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
@@ -677,7 +685,7 @@
         </div>
       </section>
     </main>
-
     <script src="app.js"></script>
+
   </body>
 </html>
