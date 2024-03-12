@@ -96,7 +96,7 @@ function createRow(user) {
             >
               ${user.id}
             </th>
-            <td class="px-6 py-4">${user.full_name}</td>
+            <td class="px-6 py-4 sticky left-0 bg-white dark:bg-gray-800">${user.full_name}</td>
             <td class="px-6 py-4">${user.username}</td>
             <td class="px-6 py-4">${user.phone}</td>
             <td class="px-6 py-4">
