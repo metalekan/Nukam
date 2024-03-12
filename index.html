@@ -20,9 +20,7 @@
     <nav
       class="w-0 xl:w-[15%] h-screen text-white hidden xl:flex flex-col justify-between items-center py-10 px-5 fixed top-0"
     >
-      <div
-        class="flex flex-col items-center h-[100%]"
-      >
+      <div class="flex flex-col items-center h-[100%]">
         <a href="/" class="cursor-pointer h-[20%]">
           <img
             class="w-full h-16 object-contain object-center"
@@ -76,16 +74,15 @@
       </div>
 
       <label class="ui-switch hidden">
-        <input type="checkbox">
+        <input type="checkbox" />
         <div class="slider">
           <div class="circle"></div>
         </div>
       </label>
-      
     </nav>
 
     <main
-      class="w-full xl:w-[85%] ms-0 xl:ms-[15%] mmin-h-screen py-10 px-5 xl:px-10 flex flex-col gap-10 bg-blue-700"
+      class="w-full xl:w-[85%] ms-0 xl:ms-[15%] mmin-h-screen py-10 px-5 xl:px-10 flex flex-col gap-10 bg-[#f8f8fb] dark:bg-[#011222]"
     >
       <div class="flex items-center justify-between gap-4">
         <form class="group w-full">
@@ -119,7 +116,7 @@
             ></span>
           </div>
           <span
-            class="capitalize text-sm xl:text-base text-white text-center font-medium"
+            class="capitalize text-sm xl:text-lg font-medium text-gray-900 dark:text-white"
           >
             welcome, john doe
           </span>
@@ -127,11 +124,10 @@
       </div>
 
       <section
-        class="bg-white dark:bg-gray-900 rounded-xl w-full py-10 px-5 xl:px-10"
+        class="bg-white dark:bg-gray-900 shadow-lg rounded-xl w-full py-10 px-5 xl:px-10"
       >
-        <h1 class="mb-2 text-2xl font-medium text-gray-900 dark:text-white">
-          Board
-        </h1>
+        <h4 class="mb-2 text-2xl font-bold dark:text-white">Board</h4>
+
         <div class="overflow-x-auto">
           <table
             class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
@@ -156,9 +152,7 @@
       <section
         class="bg-white dark:bg-gray-900 shadow-lg rounded-xl flex flex-col py-10 px-5 xl:px-10"
       >
-        <h1 class="mb-2 text-2xl font-medium text-gray-900 dark:text-white">
-          John Doe
-        </h1>
+        <h1 class="mb-2 text-2xl font-bold dark:text-white">John Doe</h1>
         <div class="grid grid-cols-1 xl:grid-cols-2 gap-10 items-start">
           <div class="aspect-video">
             <!-- Replace 'VIDEO_ID' with the actual ID of the YouTube video -->
@@ -252,9 +246,9 @@
       </section>
 
       <section
-        class="bg-white dark:bg-gray-900 rounded-xl w-full flex flex-col gap-8 py-10 px-5 xl:px-10"
+        class="bg-white dark:bg-gray-900 shadow-lg rounded-xl w-full flex flex-col gap-8 py-10 px-5 xl:px-10"
       >
-        <h1 class="mb-2 text-2xl font-medium text-gray-900 dark:text-white">
+        <h1 class="mb-2 text-2xl font-bold dark:text-white">
           Approved Talents
         </h1>
         <div class="overflow-x-auto">
@@ -363,11 +357,9 @@
       </section>
 
       <section
-        class="bg-white dark:bg-gray-900 rounded-xl w-full flex flex-col gap-8 py-10 px-5 xl:px-10"
+        class="bg-white dark:bg-gray-900 shadow-lg rounded-xl w-full flex flex-col gap-8 py-10 px-5 xl:px-10"
       >
-        <h1 class="mb-2 text-2xl font-medium text-gray-900 dark:text-white">
-          Programs
-        </h1>
+        <h1 class="mb-2 text-2xl font-bold dark:text-white">Programs</h1>
 
         <div class="grid grid-cols-1 xl:grid-cols-2 gap-10 items-center">
           <div class="block relative flex flex-col self-start">
@@ -471,11 +463,9 @@
       </section>
 
       <section
-        class="bg-white dark:bg-gray-900 rounded-xl w-full flex flex-col gap-8 py-10 px-5 xl:px-10"
+        class="bg-white dark:bg-gray-900 shadow-lg rounded-xl w-full flex flex-col gap-8 py-10 px-5 xl:px-10"
       >
-        <h1 class="mb-2 text-2xl font-medium text-gray-900 dark:text-white">
-          Bio
-        </h1>
+        <h1 class="mb-2 text-2xl font-bold dark:text-white">Bio</h1>
         <div
           class="grid grid-cols-1 xl:grid-cols-3 gap-2 xl:gap-10 justify-between"
         >
@@ -626,10 +616,10 @@
         class="bg-[url('images/image_one.JPG')] bg-cover bg-center bg-no-repeat min-h-screen flex flex-col items-center justify-center"
       >
         <div
-          class="bg-white dark:bg-gray-900 bg-opacity-90 dark:bg-opacity-90 p-5 rounded-xl w-[80%] xl:w-[25%]"
+          class="bg-white dark:bg-gray-900 shadow-lg bg-opacity-95 dark:bg-opacity-95 p-5 rounded-xl w-[70%] xl:w-[25%] shadow-lg"
         >
           <h1
-            class="text-xl xl:text-2xl tracking-tight font-medium text-gray-900 dark:text-white mb-10 text-center"
+            class="text-2xl font-bold dark:text-white mb-10 text-center"
           >
             Welcome Back 👋
           </h1>
@@ -679,13 +669,12 @@
               type="submit"
               class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
-              Submit
+              Login
             </button>
           </form>
         </div>
       </section>
     </main>
     <script src="app.js"></script>
-
   </body>
 </html>
