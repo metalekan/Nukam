@@ -1,3 +1,18 @@
+const toggleButton = document.querySelector(".checkbox");
+const menu = document.getElementById("mobile_menu");
+
+function toggleMenu() {
+  // if (menu.classList.contains("flex")) {
+  //   menu.classList.toggle("hidden");
+  // } else {
+
+  // }
+  menu.classList.contains("hidden") ? null : menu.classList.toggle("hidden");
+  alert("clicked")
+}
+
+toggleButton.addEventListener("click", toggleMenu());
+
 let users = [
   {
     id: 1,
@@ -76,7 +91,7 @@ async function loadUsers() {
   // users = await response.json()
 
   userToTableRow();
-}
+};
 
 loadUsers();
 
@@ -85,7 +100,7 @@ function userToTableRow() {
   users.forEach((user) => {
     tbody.innerHTML += createRow(user);
   });
-}
+};
 
 function createRow(user) {
   return `

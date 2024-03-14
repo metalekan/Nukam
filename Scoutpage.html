@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Nukam Sports</title>
+  </head>
+  <body>
+    <header class="sticky top-0 z-50 glass bg-[#002EBA]">
+      <nav
+        class="max-w-screen-xl mx-auto px-5 lg:px-10 py-2.5 flex justify-between items-center text-white border"
+      >
+        <div class="flex items-center">
+          <img src="images/logo_nukam.png" class="h-14 xl:h-20" />
+        </div>
+        <ul
+          class="menu uppercase hidden xl:flex lg:gap-[4rem] gap-[2rem] text-sm"
+        >
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="#project">About</a>
+          </li>
+          <li>
+            <a href=""> Academy </a>
+          </li>
+          <li>
+            <a href="#contact">Events</a>
+          </li>
+          <li>
+            <a href="#contact">Gallery</a>
+          </li>
+          <li>
+            <a href="#contact">Contact us</a>
+          </li>
+        </ul>
+
+        <input
+          hidden=""
+          class="check-icon"
+          id="check-icon"
+          name="check-icon"
+          type="checkbox"
+        />
+        <label class="icon-menu checkbox xl:hidden" for="check-icon">
+          <div class="bar bar--1"></div>
+          <div class="bar bar--2"></div>
+          <div class="bar bar--3"></div>
+        </label>
+
+        <ul
+          class="hidden mobile__menu bg-black h-screen w-full place-content-center gap-[4rem] text-center text-sm xl:text-md z-[20] fixed top-0 right-0 rounded-tl-lg animate__animated animate__slideInLeft"
+        >
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="#project">About</a>
+          </li>
+          <li>
+            <a href=""> Academy </a>
+          </li>
+          <li>
+            <a href="#contact">Events</a>
+          </li>
+          <li>
+            <a href="#contact">Gallery</a>
+          </li>
+          <li>
+            <a href="#contact">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div
+          id="container"
+          class="p-5 xl:p-10 grid grid-cols-2 xl:grid-cols-4 gap-8 max-w-screen-xl mx-auto"
+        ></div>
+      </section>
+    </main>
+    <script>
+      const worksArray = [
+        {
+          id: 1,
+          name: "emawodia and attorney",
+          detail: "web development",
+          image: "./images/mockup.jpg",
+          link: "emawodia.html",
+        },
+        {
+          id: 2,
+          name: "xtralarge food network",
+          detail: "web development",
+          image: "./images/mockup.jpg",
+          link: "xtralarge.html",
+        },
+        {
+          id: 3,
+          name: "paulano graceland africa",
+          detail: "web development",
+          image: "",
+          link: "paulano.html",
+        },
+        {
+          id: 4,
+          name: "dr dees group",
+          detail: "web development",
+          image: "",
+          link: "dees.html",
+        },
+        {
+          id: 5,
+          name: "hawkit",
+          detail: "web development",
+          image: "./images/mockup.jpg",
+          link: "hawkit.html",
+        },
+        {
+          id: 6,
+          name: "xtratoken",
+          detail: "web development",
+          image: "./images/mockup.jpg",
+          link: "xtratoken.html",
+        },
+        {
+          id: 7,
+          name: "easylona",
+          detail: "web development",
+          image: "",
+          link: "easylona.html",
+        },
+        {
+          id: 8,
+          name: "shopwave",
+          detail: "web development",
+          image: "",
+          link: "shopwave.html",
+        },
+      ];
+
+      const worksContainer = document.getElementById("container");
+      const worksHTML = worksArray
+        .map(
+          (item, index) => `
+          <div class="card">
+          <div class="">
+            <div class="grid grid-cols-2 gap-4 justify-between">
+              <div>
+                <img
+                  class="h-40 w-60 object-cover object-center rounded-xl"
+                  src="images/bio.png"
+                  loading="lazy"
+                  alt="profile"
+                />
+              </div>
+              <p
+                class="text-end text-[#002EBA] text-2xl font-bold border-t-4 border-[#002EBA]"
+              >
+                PG
+              </p>
+            </div>
+            <h1 class="font-bold">James Tyler</h1>
+            <p class="mb-8">Center</p>
+            <p><strong>Nationality :</strong> USA</p>
+          </div>
+          <button class="card-button">View Profile</button>
+        </div>
+`
+        )
+        .join("");
+
+      worksContainer.innerHTML = worksHTML;
+    </script>
+        <script src="app.js"></script>
+  </body>
+</html>
