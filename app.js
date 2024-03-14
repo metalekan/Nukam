@@ -1,17 +1,15 @@
-const toggleButton = document.querySelector(".checkbox");
+const toggleButton = document.getElementById("checkbox");
 const menu = document.getElementById("mobile_menu");
 
 function toggleMenu() {
-  // if (menu.classList.contains("flex")) {
-  //   menu.classList.toggle("hidden");
-  // } else {
-
-  // }
-  menu.classList.contains("hidden") ? null : menu.classList.toggle("hidden");
-  alert("clicked")
+  // alert("done")
+  if (menu.classList.contains("flex")) {
+  } else {
+  }
+  menu.classList.toggle("hidden");
 }
 
-toggleButton.addEventListener("click", toggleMenu());
+toggleButton.addEventListener("click", toggleMenu);
 
 let users = [
   {
