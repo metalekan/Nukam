@@ -104,14 +104,14 @@ function userToTableRow() {
 
 function createRow(user) {
   return `
-      <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+      <tr class="bg-white border-b">
             <th
               scope="row"
               class="font-medium text-gray-900 whitespace-nowrap dark:text-white px-6 py-4"
             >
               ${user.id}
             </th>
-            <td class="px-6 py-4 sticky left-0 bg-white dark:bg-gray-800">${user.full_name}</td>
+            <td class="px-6 py-4 sticky left-0 bg-white">${user.full_name}</td>
             <td class="px-6 py-4">${user.username}</td>
             <td class="px-6 py-4">${user.phone}</td>
             <td class="px-6 py-4">
